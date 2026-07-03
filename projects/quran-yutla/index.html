@@ -38,7 +38,9 @@
   .btn.primary{background:var(--fg);color:var(--bg)}
   .btn.primary:hover{transform:translateY(-2px)}
   .btn.ghost:hover{background:var(--fg);color:var(--bg)}
-  .cover{margin-top:clamp(2rem,5vw,3rem);aspect-ratio:16/9;border-radius:22px;overflow:hidden;border:1px solid var(--border)}
+  .cover{margin-top:clamp(2rem,5vw,3rem);aspect-ratio:3/4;border-radius:22px;overflow:hidden;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent-soft),var(--bg-alt))}
+  @media(min-width:760px){.cover{aspect-ratio:16/9}}
+  .cover img{height:90%;width:auto;max-width:92%;object-fit:contain;border-radius:1.4rem;box-shadow:0 24px 60px rgba(0,0,0,.35)}
   .ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent-soft),var(--bg-alt));color:var(--subtle);font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:1rem}
   .ph svg{width:34px;height:34px;margin-bottom:.6rem;opacity:.6}
   section{padding:clamp(2rem,5vw,3.5rem) 0}
@@ -51,7 +53,10 @@
   ul.feat li::before{content:"";flex:0 0 auto;width:9px;height:9px;margin-top:.55rem;border-radius:3px;background:var(--accent)}
   .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
   @media(min-width:760px){.gallery{grid-template-columns:repeat(3,1fr)}}
-  .gallery .cell{aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid var(--border)}
+  @media(min-width:1000px){.gallery{grid-template-columns:repeat(4,1fr)}}
+  .gallery .cell{aspect-ratio:9/20;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:var(--bg-alt);transition:transform .3s,border-color .3s}
+  .gallery .cell:hover{transform:translateY(-4px);border-color:var(--accent)}
+  .gallery .cell img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
   .divider{height:1px;background:var(--border)}
   .note{margin-top:1.2rem;font-size:.9rem;color:var(--subtle);font-style:italic}
   footer{padding:2.5rem 0 3.5rem;color:var(--subtle);font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
@@ -72,10 +77,7 @@
     <div class="tags"><span class="tag">NestJS</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">Swagger</span><span class="tag">Paymob</span></div>
     <div class="actions"><a class="btn primary" href="https://github.com/Halimmsbah" target="_blank" rel="noreferrer noopener">View on GitHub <span aria-hidden="true">↗</span></a><a class="btn ghost" href="/#projects-section">Back to Work</a></div>
     <p class="note">This project's live link is private — the case study covers the architecture and scope.</p>
-    <div class="cover"><div class="ph"><div>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-      <div>Cover screenshot — replace me</div>
-    </div></div></div>
+    <div class="cover"><img src="cover.jpeg" alt="Quran Yutla — brand splash screen" loading="eager" /></div>
   </div>
   <section class="split">
     <div><div class="lbl">Overview</div><h2>What it is</h2></div>
@@ -89,7 +91,7 @@
   <div class="divider"></div>
   <section>
     <div class="lbl">Gallery</div><h2>Screens</h2>
-    <div class="gallery"><div class="cell"><div class="ph">Screenshot 1</div></div><div class="cell"><div class="ph">Screenshot 2</div></div><div class="cell"><div class="ph">Screenshot 3</div></div><div class="cell"><div class="ph">Screenshot 4</div></div><div class="cell"><div class="ph">Screenshot 5</div></div><div class="cell"><div class="ph">Screenshot 6</div></div></div>
+    <div class="gallery"><div class="cell"><img src="shot-1.jpeg" alt="Onboarding — learn Quran with AI and XR" loading="lazy" /></div><div class="cell"><img src="shot-2.jpeg" alt="Role selection — student, parent or teacher" loading="lazy" /></div><div class="cell"><img src="shot-3.jpeg" alt="Home dashboard with packages menu" loading="lazy" /></div><div class="cell"><img src="shot-4.jpeg" alt="Recitation setup — choose reciter and surah" loading="lazy" /></div><div class="cell"><img src="shot-5.jpeg" alt="Mushaf reading view — Surah Al-Baqarah" loading="lazy" /></div><div class="cell"><img src="shot-6.jpeg" alt="AI recitation analysis in progress" loading="lazy" /></div><div class="cell"><img src="shot-7.jpeg" alt="AI evaluation results — tajweed scores and required corrections" loading="lazy" /></div><div class="cell"><img src="shot-8.jpeg" alt="Subscription plans — sessions, country and discount code" loading="lazy" /></div><div class="cell"><img src="shot-9.jpeg" alt="Profile and settings — account, language, dark mode" loading="lazy" /></div><div class="cell"><img src="shot-10.jpeg" alt="More — FAQ, support and app info" loading="lazy" /></div><div class="cell"><img src="shot-11.jpeg" alt="App loading screen with Quran Yutla logo" loading="lazy" /></div><div class="cell"><img src="shot-12.jpeg" alt="Recitation analysis progress with memorization tip" loading="lazy" /></div></div>
   </section>
 </main>
 <footer class="wrap"><span>© 2026 Halim Msbah</span><a href="/#projects-section">← Back to all projects</a></footer>
