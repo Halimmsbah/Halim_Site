@@ -10,8 +10,8 @@ Static site (Next.js export). Deployed on Vercel.
 - `projects/` — project case-study pages
   - `virexeg/` — VirexEG, full-stack production website for a clothing brand
   - `g-unit/` — G.UNIT, e-commerce store with a full admin dashboard
-  - `beed-studios/` — BEED Studios, bilingual AR/EN site for a Saudi production studio
   - `quran-yutla/` — Quran Yutla, AI-powered learning platform (NestJS + PostgreSQL)
+  - `beed-studios/` — BEED Studios, bilingual AR/EN site for a Saudi production studio
 - `_next/` — build assets (JS, CSS, fonts, media)
 
 ## Run locally
