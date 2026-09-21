@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>G.UNIT — Halim Msbah</title>
+<meta name="description" content="G.UNIT — E-commerce Store &amp; Admin System by Halim Msbah." />
+<link rel="icon" href="/icon.png" />
+<script>
+(function(){try{var t=localStorage.getItem('theme');document.documentElement.dataset.theme=t==='light'?'light':'dark';}catch(e){document.documentElement.dataset.theme='dark';}})();
+</script>
+<style>
+  @font-face{font-family:"InterSite";src:url("/_next/static/media/e4af272ccee01ff0-s.p.woff2") format("woff2");font-weight:100 900;font-display:swap}
+  :root{--bg:#f9f8ff;--bg-alt:#fff;--fg:#060607;--muted:#555;--subtle:#888;--accent:#0016ec;--accent-soft:#d9e6ff;--border:#d9e6ff}
+  html[data-theme="dark"]{--bg:#0a0a0c;--bg-alt:#131318;--fg:#f9f8ff;--muted:#a8a8ae;--subtle:#6e6e76;--accent:#4a83ff;--accent-soft:#1b2540;--border:#1f2942}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"InterSite","Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+  header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{font-weight:800;font-size:1.35rem;letter-spacing:-.03em}
+  .back{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:.9rem;color:var(--muted);transition:color .2s}
+  .back:hover{color:var(--accent)}
+  .tglt{border:1.5px solid var(--border);background:transparent;color:var(--fg);cursor:pointer;border-radius:999px;padding:.45rem .9rem;font:inherit;font-size:.75rem;font-weight:700;letter-spacing:.12em;display:inline-flex;align-items:center;gap:.4rem;transition:.2s}
+  .tglt:hover{background:var(--fg);color:var(--bg)}
+  .hero{padding:clamp(2.5rem,7vw,5rem) 0 clamp(1.5rem,4vw,2.5rem)}
+  .crumb{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--subtle);margin-bottom:1.4rem}
+  .crumb b{color:var(--accent)}
+  h1{font-size:clamp(2.6rem,9vw,6rem);line-height:.98;letter-spacing:-.04em;font-weight:800}
+  .tagline{margin-top:1rem;font-size:clamp(1.05rem,2.5vw,1.4rem);color:var(--muted);max-width:46ch}
+  .tags{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.6rem}
+  .tag{font-size:.8rem;font-weight:600;padding:.4rem .85rem;border-radius:999px;background:var(--accent-soft);color:var(--accent);border:1px solid transparent}
+  html[data-theme="dark"] .tag{border-color:var(--border)}
+  .actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.85rem;letter-spacing:.05em;padding:.85rem 1.4rem;border-radius:999px;transition:.2s;border:2px solid var(--fg)}
+  .btn.primary{background:var(--fg);color:var(--bg)}
+  .btn.primary:hover{transform:translateY(-2px)}
+  .btn.ghost:hover{background:var(--fg);color:var(--bg)}
+  .cover{margin-top:clamp(2rem,5vw,3rem);aspect-ratio:16/9;border-radius:22px;overflow:hidden;border:1px solid var(--border)}
+  section{padding:clamp(2rem,5vw,3.5rem) 0}
+  .lbl{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--subtle);margin-bottom:1rem}
+  h2{font-size:clamp(1.6rem,4vw,2.4rem);letter-spacing:-.02em;font-weight:800;margin-bottom:1rem}
+  h3{font-size:clamp(1.05rem,2.2vw,1.25rem);font-weight:800;letter-spacing:-.01em;margin:2rem 0 .9rem}
+  h3:first-of-type{margin-top:.5rem}
+  .lead{font-size:clamp(1.02rem,2.2vw,1.2rem);color:var(--muted);max-width:70ch}
+  @media(min-width:760px){.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:2.5rem;align-items:start}}
+  ul.feat{list-style:none;display:grid;gap:.9rem;margin-top:.5rem}
+  ul.feat li{display:flex;gap:.8rem;font-size:1rem;color:var(--fg)}
+  ul.feat li::before{content:"";flex:0 0 auto;width:9px;height:9px;margin-top:.55rem;border-radius:3px;background:var(--accent)}
+  .mods{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin-top:.5rem}
+  @media(min-width:640px){.mods{grid-template-columns:repeat(3,1fr)}}
+  @media(min-width:980px){.mods{grid-template-columns:repeat(4,1fr)}}
+  .mods li{font-size:.88rem;font-weight:600;color:var(--fg);border:1px solid var(--border);background:var(--bg-alt);border-radius:12px;padding:.7rem .9rem;transition:border-color .2s,color .2s}
+  .mods li:hover{border-color:var(--accent);color:var(--accent)}
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+  @media(min-width:760px){.gallery{grid-template-columns:repeat(3,1fr)}}
+  .gallery .cell{aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:var(--bg-alt);transition:transform .3s,border-color .3s}
+  .gallery .cell:hover{transform:translateY(-4px);border-color:var(--accent)}
+  .cover img,.gallery .cell img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  .gallery--two{grid-template-columns:repeat(2,1fr);max-width:720px}
+  .pgal{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;max-width:420px}
+  .pgal--three{grid-template-columns:repeat(3,1fr);max-width:620px}
+  .cell{padding:0;font:inherit;color:inherit;background:var(--bg-alt);cursor:zoom-in;display:block;width:100%}
+  .lb[hidden]{display:none}
+  .lb{position:fixed;inset:0;z-index:100;background:color-mix(in srgb,#06060a 92%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;flex-direction:column}
+  .lb-bar{flex:0 0 auto;display:flex;align-items:center;gap:1rem;padding:.85rem clamp(1rem,4vw,2rem);border-bottom:1px solid rgba(255,255,255,.14);color:#f4f4f7}
+  .lb-cap{font-size:.9rem;font-weight:600;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .lb-count{font-size:.78rem;letter-spacing:.14em;color:#9a9aa6;flex:0 0 auto}
+  .lb-btn{flex:0 0 auto;border:1.5px solid rgba(255,255,255,.3);background:transparent;color:#f4f4f7;cursor:pointer;border-radius:999px;padding:.4rem .9rem;font:inherit;font-size:.78rem;font-weight:700;letter-spacing:.08em;transition:.2s}
+  .lb-btn:hover{background:#f4f4f7;color:#0a0a0c}
+  .lb-scroll{flex:1 1 auto;overflow-y:auto;overflow-x:hidden;padding:clamp(1rem,3vw,2rem) clamp(1rem,4vw,2rem) 3rem;overscroll-behavior:contain;text-align:center}
+  .lb-scroll img{width:100%;height:auto;border-radius:10px;display:inline-block}
+  .lb-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:44px;height:64px;border:none;border-radius:8px;background:rgba(10,10,14,.6);color:#f4f4f7;font-size:2rem;line-height:1;cursor:pointer;transition:.2s}
+  .lb-arrow:hover{background:rgba(10,10,14,.9)}
+  .lb-prev{left:.4rem}
+  .lb-next{right:.4rem}
+  @media(max-width:620px){.lb-arrow{display:none}}
+  .pgal .cell{aspect-ratio:9/19;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:var(--bg-alt);transition:transform .3s,border-color .3s}
+  .pgal .cell:hover{transform:translateY(-4px);border-color:var(--accent)}
+  .pgal .cell img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  .divider{height:1px;background:var(--border)}
+  .note{margin-top:1.2rem;font-size:.9rem;color:var(--subtle);font-style:italic}
+  footer{padding:2.5rem 0 3.5rem;color:var(--subtle);font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+  footer a:hover{color:var(--accent)}
+</style>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="back" href="/#projects-section"><span aria-hidden="true">←</span> All Projects</a>
+  <a class="logo" href="/">HALIM</a>
+  <button class="tglt" id="tgl" type="button" aria-label="Toggle theme">DARK</button>
+</div></header>
+<main class="wrap">
+  <div class="hero">
+    <div class="crumb">Project <b>/ 02</b> · E-commerce Store &amp; Admin System</div>
+    <h1>G.UNIT</h1>
+    <p class="tagline">A complete online store built from scratch — storefront, checkout, and a 15-screen admin dashboard that runs the whole operation.</p>
+    <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Product Variants</span><span class="tag">Inventory</span><span class="tag">Payments</span><span class="tag">Shipping</span><span class="tag">Roles &amp; Permissions</span></div>
+    <div class="actions"><a class="btn primary" href="https://g-unit-topaz.vercel.app/" target="_blank" rel="noreferrer noopener">Visit Live Site <span aria-hidden="true">↗</span></a><a class="btn ghost" href="/#projects-section">Back to Work</a></div>
+    <p class="note">Screens are from the live build, shown with sample data.</p>
+    <div class="cover"><img src="cover.jpg" alt="G.UNIT storefront homepage — Winter 2027 collection hero" loading="eager" /></div>
+  </div>
+  <section class="split">
+    <div><div class="lbl">Overview</div><h2>What it is</h2></div>
+    <p class="lead">G.UNIT is a full e-commerce system designed and developed end to end — from the customer-facing storefront through to the back office that keeps it running. The storefront covers the homepage, shop, product pages, cart, and a mobile-first responsive experience; the admin dashboard covers the full store cycle, from catalogue and orders to inventory, marketing, and staff permissions.</p>
+  </section>
+  <div class="divider"></div>
+  <section>
+    <div class="lbl">Highlights</div><h2>Key features</h2>
+    <ul class="feat"><li>Complete storefront: homepage, shop with filters and sorting, product pages, cart drawer, and checkout.</li><li>Variant system for colour and size, with a stock matrix that feeds straight into inventory.</li><li>Order lifecycle from placement to delivery — status timeline, invoices, courier assignment, and tracking.</li><li>Cash on delivery, Instapay transfer with proof upload, card and installments — each toggled per store.</li><li>Bilingual English/Arabic content: every product, page and setting is authored in both languages.</li><li>Per-governorate shipping zones, rates and delivery windows across Egypt.</li><li>Discounts and coupons: percentage, fixed, and free-delivery rules with usage limits and scheduling.</li><li>Content management for the homepage, collections, and lookbook — editable without touching code.</li><li>Role-based permissions across five roles, including masked customer data for support staff.</li><li>Responsive mobile experience with bottom navigation and a full-screen filter sheet.</li></ul>
+  </section>
+  <div class="divider"></div>
+  <section>
+    <div class="lbl">Back office</div><h2>Admin modules</h2>
+    <ul class="mods"><li>Dashboard Overview</li><li>Orders</li><li>Order Details</li><li>Products</li><li>Add Product</li><li>Product Variants</li><li>Inventory</li><li>Customers</li><li>Discounts &amp; Coupons</li><li>Content Management</li><li>Collections</li><li>Analytics</li><li>Shipping</li><li>Payments</li><li>Users &amp; Permissions</li></ul>
+  </section>
+  <div class="divider"></div>
+  <section>
+    <div class="lbl">My role</div><h2>Full Stack Developer</h2>
+    <p class="lead">Design and implementation of the storefront, the Node.js backend, the React admin dashboard, and the database architecture.</p>
+  </section>
+  <div class="divider"></div>
+  <section>
+    <div class="lbl">Gallery</div><h2>Storefront</h2>
+    <p class="lead">Click any screen to open the full page.</p>
+    <div class="gallery"><button type="button" class="cell" data-full="shots/sf-home.jpg" data-cap="Homepage — Winter 2027 collection hero" data-w="1100"><img src="shots/sf-home-t.jpg" alt="Homepage — Winter 2027 collection hero" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sf-shop.jpg" data-cap="Shop — full catalogue with sort and filters" data-w="1100"><img src="shots/sf-shop-t.jpg" alt="Shop — full catalogue with sort and filters" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sf-shop-filtered.jpg" data-cap="Shop — filtered by size, colour and availability" data-w="1100"><img src="shots/sf-shop-filtered-t.jpg" alt="Shop — filtered by size, colour and availability" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sf-product.jpg" data-cap="Product page — colourways, sizes and details" data-w="1100"><img src="shots/sf-product-t.jpg" alt="Product page — colourways, sizes and details" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sf-product-avail.jpg" data-cap="Product — live per-variant availability" data-w="1100"><img src="shots/sf-product-avail-t.jpg" alt="Product — live per-variant availability" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sf-bag.jpg" data-cap="Bag — line items, totals and free-delivery threshold" data-w="1100"><img src="shots/sf-bag-t.jpg" alt="Bag — line items, totals and free-delivery threshold" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sf-checkout.jpg" data-cap="Checkout — contact, address, delivery and payment" data-w="1100"><img src="shots/sf-checkout-t.jpg" alt="Checkout — contact, address, delivery and payment" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sf-instapay.jpg" data-cap="Instapay transfer — upload payment confirmation" data-w="1100"><img src="shots/sf-instapay-t.jpg" alt="Instapay transfer — upload payment confirmation" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sf-confirmed.jpg" data-cap="Order confirmed — cash on delivery" data-w="1100"><img src="shots/sf-confirmed-t.jpg" alt="Order confirmed — cash on delivery" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sf-track.jpg" data-cap="Track order — live status for a placed order" data-w="1100"><img src="shots/sf-track-t.jpg" alt="Track order — live status for a placed order" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sf-lookbook.jpg" data-cap="Lookbook — editorial campaign page" data-w="1100"><img src="shots/sf-lookbook-t.jpg" alt="Lookbook — editorial campaign page" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sf-account.jpg" data-cap="Customer account — profile, orders and addresses" data-w="1100"><img src="shots/sf-account-t.jpg" alt="Customer account — profile, orders and addresses" loading="lazy" /></button></div>
+    <h3>On mobile</h3>
+    <div class="pgal"><button type="button" class="cell" data-full="shots/sfm-home.jpg" data-cap="Mobile homepage" data-w="420"><img src="shots/sfm-home-t.jpg" alt="Mobile homepage" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sfm-product.jpg" data-cap="Mobile product page" data-w="420"><img src="shots/sfm-product-t.jpg" alt="Mobile product page" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sfm-checkout.jpg" data-cap="Mobile checkout" data-w="420"><img src="shots/sfm-checkout-t.jpg" alt="Mobile checkout" loading="lazy" /></button><button type="button" class="cell" data-full="shots/sfm-filters.jpg" data-cap="Mobile filter sheet" data-w="420"><img src="shots/sfm-filters-t.jpg" alt="Mobile filter sheet" loading="lazy" /></button></div>
+  </section>
+  <div class="divider"></div>
+  <section>
+    <div class="lbl">Gallery</div><h2>Admin dashboard</h2>
+    <div class="gallery"><button type="button" class="cell" data-full="shots/ad-dashboard.jpg" data-cap="Dashboard — sales, orders, low stock and activity" data-w="1100"><img src="shots/ad-dashboard-t.jpg" alt="Dashboard — sales, orders, low stock and activity" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-orders.jpg" data-cap="Orders — status tabs, filters and bulk actions" data-w="1100"><img src="shots/ad-orders-t.jpg" alt="Orders — status tabs, filters and bulk actions" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-order-details.jpg" data-cap="Order details — items, timeline, payment, shipping" data-w="1100"><img src="shots/ad-order-details-t.jpg" alt="Order details — items, timeline, payment, shipping" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-instapay.jpg" data-cap="Instapay review — verify and approve a transfer" data-w="1100"><img src="shots/ad-instapay-t.jpg" alt="Instapay review — verify and approve a transfer" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-products.jpg" data-cap="Products — catalogue with stock and status" data-w="1100"><img src="shots/ad-products-t.jpg" alt="Products — catalogue with stock and status" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-new-product.jpg" data-cap="New product — media, pricing and variant matrix" data-w="1100"><img src="shots/ad-new-product-t.jpg" alt="New product — media, pricing and variant matrix" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-inventory.jpg" data-cap="Inventory — stock by SKU across every variant" data-w="1100"><img src="shots/ad-inventory-t.jpg" alt="Inventory — stock by SKU across every variant" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-customer.jpg" data-cap="Customer profile — lifetime value, addresses, sizes" data-w="1100"><img src="shots/ad-customer-t.jpg" alt="Customer profile — lifetime value, addresses, sizes" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-analytics.jpg" data-cap="Analytics — revenue trend and product performance" data-w="1100"><img src="shots/ad-analytics-t.jpg" alt="Analytics — revenue trend and product performance" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-content.jpg" data-cap="Content — homepage hero and blocks, in EN and AR" data-w="1100"><img src="shots/ad-content-t.jpg" alt="Content — homepage hero and blocks, in EN and AR" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-store.jpg" data-cap="Store settings — currency, delivery and bilingual copy" data-w="1100"><img src="shots/ad-store-t.jpg" alt="Store settings — currency, delivery and bilingual copy" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-payments.jpg" data-cap="Payment methods — COD, Instapay, card, installments" data-w="1100"><img src="shots/ad-payments-t.jpg" alt="Payment methods — COD, Instapay, card, installments" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-shipping.jpg" data-cap="Shipping settings — governorate zones and rates" data-w="1100"><img src="shots/ad-shipping-t.jpg" alt="Shipping settings — governorate zones and rates" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-permissions.jpg" data-cap="Users &amp; permissions — roles and per-area access" data-w="1100"><img src="shots/ad-permissions-t.jpg" alt="Users &amp; permissions — roles and per-area access" loading="lazy" /></button><button type="button" class="cell" data-full="shots/ad-design-system.jpg" data-cap="Design system — tokens, type scale and components" data-w="1100"><img src="shots/ad-design-system-t.jpg" alt="Design system — tokens, type scale and components" loading="lazy" /></button></div>
+    <h3>On tablet</h3>
+    <div class="gallery gallery--two"><button type="button" class="cell" data-full="shots/at-orders.jpg" data-cap="Orders on tablet" data-w="1100"><img src="shots/at-orders-t.jpg" alt="Orders on tablet" loading="lazy" /></button><button type="button" class="cell" data-full="shots/at-edit-product.jpg" data-cap="Edit product on tablet" data-w="1100"><img src="shots/at-edit-product-t.jpg" alt="Edit product on tablet" loading="lazy" /></button></div>
+    <h3>On mobile</h3>
+    <div class="pgal pgal--three"><button type="button" class="cell" data-full="shots/am-dashboard.jpg" data-cap="Admin dashboard on mobile" data-w="420"><img src="shots/am-dashboard-t.jpg" alt="Admin dashboard on mobile" loading="lazy" /></button><button type="button" class="cell" data-full="shots/am-orders.jpg" data-cap="Admin orders on mobile" data-w="420"><img src="shots/am-orders-t.jpg" alt="Admin orders on mobile" loading="lazy" /></button><button type="button" class="cell" data-full="shots/am-nav.jpg" data-cap="Admin navigation on mobile" data-w="420"><img src="shots/am-nav-t.jpg" alt="Admin navigation on mobile" loading="lazy" /></button></div>
+  </section>
+</main>
+<div class="lb" id="lb" hidden>
+  <div class="lb-bar"><span class="lb-cap" id="lbc"></span><span class="lb-count" id="lbn"></span><button type="button" class="lb-btn" id="lbclose" aria-label="Close">Close ✕</button></div>
+  <button type="button" class="lb-arrow lb-prev" id="lbprev" aria-label="Previous screen">‹</button>
+  <button type="button" class="lb-arrow lb-next" id="lbnext" aria-label="Next screen">›</button>
+  <div class="lb-scroll" id="lbs"><img id="lbimg" alt="" /></div>
+</div>
+<footer class="wrap"><span>© 2026 Halim Msbah</span><a href="/#projects-section">← Back to all projects</a></footer>
+<script>
+(function(){
+  var cells=[].slice.call(document.querySelectorAll('.cell')),lb=document.getElementById('lb'),
+      img=document.getElementById('lbimg'),cap=document.getElementById('lbc'),
+      cnt=document.getElementById('lbn'),scroll=document.getElementById('lbs'),i=-1,last=null;
+  function show(n){
+    i=(n+cells.length)%cells.length;
+    var c=cells[i];
+    img.src=c.dataset.full;img.alt=c.dataset.cap;
+    img.style.maxWidth=c.dataset.w+'px';
+    cap.textContent=c.dataset.cap;
+    cnt.textContent=(i+1)+' / '+cells.length;
+    scroll.scrollTop=0;
+  }
+  function open(n){last=document.activeElement;lb.hidden=false;document.body.style.overflow='hidden';show(n);document.getElementById('lbclose').focus();}
+  function close(){lb.hidden=true;img.removeAttribute('src');document.body.style.overflow='';if(last)last.focus();}
+  cells.forEach(function(c,n){c.addEventListener('click',function(){open(n);});});
+  document.getElementById('lbclose').addEventListener('click',close);
+  document.getElementById('lbprev').addEventListener('click',function(){show(i-1);});
+  document.getElementById('lbnext').addEventListener('click',function(){show(i+1);});
+  scroll.addEventListener('click',function(e){if(e.target===scroll)close();});
+  document.addEventListener('keydown',function(e){
+    if(lb.hidden)return;
+    if(e.key==='Escape')close();
+    else if(e.key==='ArrowLeft')show(i-1);
+    else if(e.key==='ArrowRight')show(i+1);
+  });
+})();
+</script>
+<script>
+(function(){var b=document.getElementById('tgl');function s(){b.textContent=document.documentElement.dataset.theme==='dark'?'LIGHT':'DARK';}s();b.addEventListener('click',function(){var n=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=n;try{localStorage.setItem('theme',n);}catch(e){}s();});})();
+</script>
+</body>
+</html>

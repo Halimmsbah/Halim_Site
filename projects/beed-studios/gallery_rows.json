@@ -1,0 +1,92 @@
+[
+ {
+  "slug": "sf-home-ar",
+  "cap": "Homepage in Arabic — the full right-to-left layout",
+  "kind": "d",
+  "sect": "sf"
+ },
+ {
+  "slug": "sf-home-en",
+  "cap": "The same homepage in English — mirrored to left-to-right",
+  "kind": "d",
+  "sect": "sf"
+ },
+ {
+  "slug": "sf-login-ar",
+  "cap": "Sign in — Arabic",
+  "kind": "d",
+  "sect": "sf"
+ },
+ {
+  "slug": "sf-login-en",
+  "cap": "Sign in — English",
+  "kind": "d",
+  "sect": "sf"
+ },
+ {
+  "slug": "ad-overview-ar",
+  "cap": "Dashboard in Arabic — visits, projects and partners",
+  "kind": "d",
+  "sect": "ad"
+ },
+ {
+  "slug": "ad-overview-en",
+  "cap": "The same dashboard in English",
+  "kind": "d",
+  "sect": "ad"
+ },
+ {
+  "slug": "ad-sections-ar",
+  "cap": "Home page sections — each block toggled on or off (Arabic)",
+  "kind": "d",
+  "sect": "ad"
+ },
+ {
+  "slug": "ad-sections-en",
+  "cap": "Home page sections in English",
+  "kind": "d",
+  "sect": "ad"
+ },
+ {
+  "slug": "ad-nav",
+  "cap": "Admin navigation — dashboard, hero video, sections, projects, partners, users",
+  "kind": "d",
+  "sect": "ad"
+ },
+ {
+  "slug": "ad-users",
+  "cap": "Users and roles",
+  "kind": "d",
+  "sect": "ad"
+ },
+ {
+  "slug": "ad-settings",
+  "cap": "Account settings",
+  "kind": "d",
+  "sect": "ad"
+ },
+ {
+  "slug": "t-sf-home",
+  "cap": "Homepage on tablet (Arabic)",
+  "kind": "d",
+  "sect": "at"
+ },
+ {
+  "slug": "t-ad-overview",
+  "cap": "Dashboard on tablet",
+  "kind": "d",
+  "sect": "at"
+ },
+ {
+  "slug": "m-sf-home",
+  "cap": "Homepage on mobile (Arabic)",
+  "kind": "m",
+  "sect": "am"
+ },
+ {
+  "slug": "m-ad-overview",
+  "cap": "Dashboard on mobile",
+  "kind": "m",
+  "sect": "am"
+ }
+]

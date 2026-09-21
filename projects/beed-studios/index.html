@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BEED Studios — Halim Msbah</title>
+<meta name="description" content="BEED Studios — bilingual corporate website by Halim Msbah." />
+<link rel="icon" href="/icon.png" />
+<script>
+(function(){try{var t=localStorage.getItem('theme');document.documentElement.dataset.theme=t==='light'?'light':'dark';}catch(e){document.documentElement.dataset.theme='dark';}})();
+</script>
+<style>
+  @font-face{font-family:"InterSite";src:url("/_next/static/media/e4af272ccee01ff0-s.p.woff2") format("woff2");font-weight:100 900;font-display:swap}
+  :root{--bg:#f9f8ff;--bg-alt:#fff;--fg:#060607;--muted:#555;--subtle:#888;--accent:#0016ec;--accent-soft:#d9e6ff;--border:#d9e6ff}
+  html[data-theme="dark"]{--bg:#0a0a0c;--bg-alt:#131318;--fg:#f9f8ff;--muted:#a8a8ae;--subtle:#6e6e76;--accent:#4a83ff;--accent-soft:#1b2540;--border:#1f2942}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"InterSite","Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+  header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{font-weight:800;font-size:1.35rem;letter-spacing:-.03em}
+  .back{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:.9rem;color:var(--muted);transition:color .2s}
+  .back:hover{color:var(--accent)}
+  .tglt{border:1.5px solid var(--border);background:transparent;color:var(--fg);cursor:pointer;border-radius:999px;padding:.45rem .9rem;font:inherit;font-size:.75rem;font-weight:700;letter-spacing:.12em;display:inline-flex;align-items:center;gap:.4rem;transition:.2s}
+  .tglt:hover{background:var(--fg);color:var(--bg)}
+  .hero{padding:clamp(2.5rem,7vw,5rem) 0 clamp(1.5rem,4vw,2.5rem)}
+  .crumb{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--subtle);margin-bottom:1.4rem}
+  .crumb b{color:var(--accent)}
+  h1{font-size:clamp(2.6rem,9vw,6rem);line-height:.98;letter-spacing:-.04em;font-weight:800}
+  .tagline{margin-top:1rem;font-size:clamp(1.05rem,2.5vw,1.4rem);color:var(--muted);max-width:46ch}
+  .tags{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.6rem}
+  .tag{font-size:.8rem;font-weight:600;padding:.4rem .85rem;border-radius:999px;background:var(--accent-soft);color:var(--accent);border:1px solid transparent}
+  html[data-theme="dark"] .tag{border-color:var(--border)}
+  .actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.85rem;letter-spacing:.05em;padding:.85rem 1.4rem;border-radius:999px;transition:.2s;border:2px solid var(--fg)}
+  .btn.primary{background:var(--fg);color:var(--bg)}
+  .btn.primary:hover{transform:translateY(-2px)}
+  .btn.ghost:hover{background:var(--fg);color:var(--bg)}
+  .cover{margin-top:clamp(2rem,5vw,3rem);aspect-ratio:16/9;border-radius:22px;overflow:hidden;border:1px solid var(--border)}
+  section{padding:clamp(2rem,5vw,3.5rem) 0}
+  .lbl{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--subtle);margin-bottom:1rem}
+  h2{font-size:clamp(1.6rem,4vw,2.4rem);letter-spacing:-.02em;font-weight:800;margin-bottom:1rem}
+  h3{font-size:clamp(1.05rem,2.2vw,1.25rem);font-weight:800;letter-spacing:-.01em;margin:2rem 0 .9rem}
+  h3:first-of-type{margin-top:.5rem}
+  .lead{font-size:clamp(1.02rem,2.2vw,1.2rem);color:var(--muted);max-width:70ch}
+  @media(min-width:760px){.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:2.5rem;align-items:start}}
+  ul.feat{list-style:none;display:grid;gap:.9rem;margin-top:.5rem}
+  ul.feat li{display:flex;gap:.8rem;font-size:1rem;color:var(--fg)}
+  ul.feat li::before{content:"";flex:0 0 auto;width:9px;height:9px;margin-top:.55rem;border-radius:3px;background:var(--accent)}
+  .mods{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin-top:.5rem}
+  @media(min-width:640px){.mods{grid-template-columns:repeat(3,1fr)}}
+  @media(min-width:980px){.mods{grid-template-columns:repeat(4,1fr)}}
+  .mods li{font-size:.88rem;font-weight:600;color:var(--fg);border:1px solid var(--border);background:var(--bg-alt);border-radius:12px;padding:.7rem .9rem;transition:border-color .2s,color .2s}
+  .mods li:hover{border-color:var(--accent);color:var(--accent)}
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+  @media(min-width:760px){.gallery{grid-template-columns:repeat(3,1fr)}}
+  .gallery .cell{aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:var(--bg-alt);transition:transform .3s,border-color .3s}
+  .gallery .cell:hover{transform:translateY(-4px);border-color:var(--accent)}
+  .cover img,.gallery .cell img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  .gallery--two{grid-template-columns:repeat(2,1fr);max-width:720px}
+  .pgal{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;max-width:420px}
+  .pgal--three{grid-template-columns:repeat(3,1fr);max-width:620px}
+  .cell{padding:0;font:inherit;color:inherit;background:var(--bg-alt);cursor:zoom-in;display:block;width:100%}
+  .lb[hidden]{display:none}
+  .lb{position:fixed;inset:0;z-index:100;background:color-mix(in srgb,#06060a 92%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;flex-direction:column}
+  .lb-bar{flex:0 0 auto;display:flex;align-items:center;gap:1rem;padding:.85rem clamp(1rem,4vw,2rem);border-bottom:1px solid rgba(255,255,255,.14);color:#f4f4f7}
+  .lb-cap{font-size:.9rem;font-weight:600;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .lb-count{font-size:.78rem;letter-spacing:.14em;color:#9a9aa6;flex:0 0 auto}
+  .lb-btn{flex:0 0 auto;border:1.5px solid rgba(255,255,255,.3);background:transparent;color:#f4f4f7;cursor:pointer;border-radius:999px;padding:.4rem .9rem;font:inherit;font-size:.78rem;font-weight:700;letter-spacing:.08em;transition:.2s}
+  .lb-btn:hover{background:#f4f4f7;color:#0a0a0c}
+  .lb-scroll{flex:1 1 auto;overflow-y:auto;overflow-x:hidden;padding:clamp(1rem,3vw,2rem) clamp(1rem,4vw,2rem) 3rem;overscroll-behavior:contain;text-align:center}
+  .lb-scroll img{width:100%;height:auto;border-radius:10px;display:inline-block}
+  .lb-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:44px;height:64px;border:none;border-radius:8px;background:rgba(10,10,14,.6);color:#f4f4f7;font-size:2rem;line-height:1;cursor:pointer;transition:.2s}
+  .lb-arrow:hover{background:rgba(10,10,14,.9)}
+  .lb-prev{left:.4rem}
+  .lb-next{right:.4rem}
+  @media(max-width:620px){.lb-arrow{display:none}}
+  .pgal .cell{aspect-ratio:9/19;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:var(--bg-alt);transition:transform .3s,border-color .3s}
+  .pgal .cell:hover{transform:translateY(-4px);border-color:var(--accent)}
+  .pgal .cell img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  .divider{height:1px;background:var(--border)}
+  .note{margin-top:1.2rem;font-size:.9rem;color:var(--subtle);font-style:italic}
+  footer{padding:2.5rem 0 3.5rem;color:var(--subtle);font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+  footer a:hover{color:var(--accent)}
+</style>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="back" href="/#projects-section"><span aria-hidden="true">←</span> All Projects</a>
+  <a class="logo" href="/">HALIM</a>
+  <button class="tglt" id="tgl" type="button" aria-label="Toggle theme">DARK</button>
+</div></header>
+<main class="wrap">
+  <div class="hero">
+    <div class="crumb">Project <b>/ 03</b> · Corporate / Creative Studio Website</div>
+    <h1>BEED Studios</h1>
+    <p class="tagline">The official site for a Saudi film production studio — bilingual Arabic and English, with the whole layout mirrored between RTL and LTR.</p>
+    <div class="tags"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">App Router i18n</span><span class="tag">RTL &amp; LTR</span><span class="tag">Responsive</span><span class="tag">Railway</span></div>
+    <div class="actions"><a class="btn primary" href="https://www.beedsa.com/ar" target="_blank" rel="noreferrer noopener">Visit Live Site <span aria-hidden="true">↗</span></a><a class="btn ghost" href="https://www.beedsa.com/en" target="_blank" rel="noreferrer noopener">English version <span aria-hidden="true">↗</span></a><a class="btn ghost" href="/#projects-section">Back to Work</a></div>
+    <div class="cover"><img src="cover.jpg" alt="BEED Studios — the services section in Arabic and English, showing the mirrored layout" loading="eager" /></div>
+  </div>
+  <section class="split">
+    <div><div class="lbl">Overview</div><h2>What it is</h2></div>
+    <p class="lead">BEED Studios is a Riyadh film and content production house founded in 2023, working across writing and production. I designed and built their official website: a content-driven site that presents the studio, its services, its work and its partners, and runs fully in both Arabic and English — not a translated copy, but the same site with the entire layout mirrored between right-to-left and left-to-right.</p>
+  </section>
+  <div class="divider"></div>
+  <section>
+    <div class="lbl">Highlights</div><h2>Key features</h2>
+    <ul class="feat"><li>Bilingual Arabic and English, routed per locale so each language has its own URL.</li><li>Full RTL and LTR mirroring — layout, type and navigation all flip, not just the text.</li><li>Services section presenting the studio’s writing and production offering.</li><li>Work showcase for the studio’s films and projects.</li><li>Partners section for the clients and companies the studio works with.</li><li>Content-driven architecture with the content wired to the backend rather than hard-coded.</li><li>Bilingual admin dashboard to manage the hero video, home page sections, projects, partners and users.</li><li>Responsive across desktop, tablet and mobile.</li><li>A visual experience built to match the studio’s creative identity.</li></ul>
+  </section>
+  <div class="divider"></div>
+  <section>
+    <div class="lbl">Scope</div><h2>What was built</h2>
+    <ul class="mods"><li>Corporate Website</li><li>Arabic / English</li><li>RTL / LTR</li><li>Responsive Design</li><li>Services Pages</li><li>Work Showcase</li><li>Partners Section</li><li>Content-driven Architecture</li><li>UX Optimisation</li><li>Backend-connected Content</li><li>Admin Dashboard</li></ul>
+  </section>
+  <div class="divider"></div>
+  <section>
+    <div class="lbl">My role</div><h2>Full Stack Developer</h2>
+    <p class="lead">Design and development of the website end to end, front to back.</p>
+  </section>
+  <div class="divider"></div>
+  <section>
+    <div class="lbl">Gallery</div><h2>Website</h2>
+    <p class="lead">Arabic and English side by side. Click any screen to open the full page.</p>
+    <div class="gallery gallery--two"><button type="button" class="cell" data-full="gallery/sf-home-ar.jpg" data-cap="Homepage in Arabic — the full right-to-left layout" data-w="1100"><img src="gallery/sf-home-ar-t.jpg" alt="Homepage in Arabic — the full right-to-left layout" loading="lazy" /></button><button type="button" class="cell" data-full="gallery/sf-home-en.jpg" data-cap="The same homepage in English — mirrored to left-to-right" data-w="1100"><img src="gallery/sf-home-en-t.jpg" alt="The same homepage in English — mirrored to left-to-right" loading="lazy" /></button><button type="button" class="cell" data-full="gallery/sf-login-ar.jpg" data-cap="Sign in — Arabic" data-w="1100"><img src="gallery/sf-login-ar-t.jpg" alt="Sign in — Arabic" loading="lazy" /></button><button type="button" class="cell" data-full="gallery/sf-login-en.jpg" data-cap="Sign in — English" data-w="1100"><img src="gallery/sf-login-en-t.jpg" alt="Sign in — English" loading="lazy" /></button></div>
+  </section>
+  <div class="divider"></div>
+  <section>
+    <div class="lbl">Gallery</div><h2>Admin dashboard</h2>
+    <div class="gallery"><button type="button" class="cell" data-full="gallery/ad-overview-ar.jpg" data-cap="Dashboard in Arabic — visits, projects and partners" data-w="1100"><img src="gallery/ad-overview-ar-t.jpg" alt="Dashboard in Arabic — visits, projects and partners" loading="lazy" /></button><button type="button" class="cell" data-full="gallery/ad-overview-en.jpg" data-cap="The same dashboard in English" data-w="1100"><img src="gallery/ad-overview-en-t.jpg" alt="The same dashboard in English" loading="lazy" /></button><button type="button" class="cell" data-full="gallery/ad-sections-ar.jpg" data-cap="Home page sections — each block toggled on or off (Arabic)" data-w="1100"><img src="gallery/ad-sections-ar-t.jpg" alt="Home page sections — each block toggled on or off (Arabic)" loading="lazy" /></button><button type="button" class="cell" data-full="gallery/ad-sections-en.jpg" data-cap="Home page sections in English" data-w="1100"><img src="gallery/ad-sections-en-t.jpg" alt="Home page sections in English" loading="lazy" /></button><button type="button" class="cell" data-full="gallery/ad-nav.jpg" data-cap="Admin navigation — dashboard, hero video, sections, projects, partners, users" data-w="1100"><img src="gallery/ad-nav-t.jpg" alt="Admin navigation — dashboard, hero video, sections, projects, partners, users" loading="lazy" /></button><button type="button" class="cell" data-full="gallery/ad-users.jpg" data-cap="Users and roles" data-w="1100"><img src="gallery/ad-users-t.jpg" alt="Users and roles" loading="lazy" /></button><button type="button" class="cell" data-full="gallery/ad-settings.jpg" data-cap="Account settings" data-w="1100"><img src="gallery/ad-settings-t.jpg" alt="Account settings" loading="lazy" /></button></div>
+    <h3>On tablet</h3>
+    <div class="gallery gallery--two"><button type="button" class="cell" data-full="gallery/t-sf-home.jpg" data-cap="Homepage on tablet (Arabic)" data-w="1100"><img src="gallery/t-sf-home-t.jpg" alt="Homepage on tablet (Arabic)" loading="lazy" /></button><button type="button" class="cell" data-full="gallery/t-ad-overview.jpg" data-cap="Dashboard on tablet" data-w="1100"><img src="gallery/t-ad-overview-t.jpg" alt="Dashboard on tablet" loading="lazy" /></button></div>
+    <h3>On mobile</h3>
+    <div class="pgal"><button type="button" class="cell" data-full="gallery/m-sf-home.jpg" data-cap="Homepage on mobile (Arabic)" data-w="420"><img src="gallery/m-sf-home-t.jpg" alt="Homepage on mobile (Arabic)" loading="lazy" /></button><button type="button" class="cell" data-full="gallery/m-ad-overview.jpg" data-cap="Dashboard on mobile" data-w="420"><img src="gallery/m-ad-overview-t.jpg" alt="Dashboard on mobile" loading="lazy" /></button></div>
+  </section>
+</main>
+<div class="lb" id="lb" hidden>
+  <div class="lb-bar"><span class="lb-cap" id="lbc"></span><span class="lb-count" id="lbn"></span><button type="button" class="lb-btn" id="lbclose" aria-label="Close">Close ✕</button></div>
+  <button type="button" class="lb-arrow lb-prev" id="lbprev" aria-label="Previous screen">‹</button>
+  <button type="button" class="lb-arrow lb-next" id="lbnext" aria-label="Next screen">›</button>
+  <div class="lb-scroll" id="lbs"><img id="lbimg" alt="" /></div>
+</div>
+<footer class="wrap"><span>© 2026 Halim Msbah</span><a href="/#projects-section">← Back to all projects</a></footer>
+<script>
+(function(){
+  var cells=[].slice.call(document.querySelectorAll('.cell')),lb=document.getElementById('lb'),
+      img=document.getElementById('lbimg'),cap=document.getElementById('lbc'),
+      cnt=document.getElementById('lbn'),scroll=document.getElementById('lbs'),i=-1,last=null;
+  function show(n){
+    i=(n+cells.length)%cells.length;
+    var c=cells[i];
+    img.src=c.dataset.full;img.alt=c.dataset.cap;
+    img.style.maxWidth=c.dataset.w+'px';
+    cap.textContent=c.dataset.cap;
+    cnt.textContent=(i+1)+' / '+cells.length;
+    scroll.scrollTop=0;
+  }
+  function open(n){last=document.activeElement;lb.hidden=false;document.body.style.overflow='hidden';show(n);document.getElementById('lbclose').focus();}
+  function close(){lb.hidden=true;img.removeAttribute('src');document.body.style.overflow='';if(last)last.focus();}
+  cells.forEach(function(c,n){c.addEventListener('click',function(){open(n);});});
+  document.getElementById('lbclose').addEventListener('click',close);
+  document.getElementById('lbprev').addEventListener('click',function(){show(i-1);});
+  document.getElementById('lbnext').addEventListener('click',function(){show(i+1);});
+  scroll.addEventListener('click',function(e){if(e.target===scroll)close();});
+  document.addEventListener('keydown',function(e){
+    if(lb.hidden)return;
+    if(e.key==='Escape')close();
+    else if(e.key==='ArrowLeft')show(i-1);
+    else if(e.key==='ArrowRight')show(i+1);
+  });
+})();
+</script>
+<script>
+(function(){var b=document.getElementById('tgl');function s(){b.textContent=document.documentElement.dataset.theme==='dark'?'LIGHT':'DARK';}s();b.addEventListener('click',function(){var n=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=n;try{localStorage.setItem('theme',n);}catch(e){}s();});})();
+</script>
+</body>
+</html>

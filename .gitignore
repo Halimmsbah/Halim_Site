@@ -19,3 +19,6 @@ npm-debug.log*
 
 # Dependencies (not used — static export — but ignore just in case)
 node_modules/
+
+# Source decks for project galleries (screenshots are extracted into projects/*/shots/)
+projects/**/*.pdf
